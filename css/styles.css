@@ -1,0 +1,782 @@
+:root {
+  /* font styles */
+  --font-family-main: 'Open Sans', sans-serif;
+  --font-family-secondary: 'Raleway', sans-serif;
+
+  /* color-header */
+  --color-header-defoult: #ffffff;
+  --color-header-acent: #ff6c00;
+
+  /* color hero */
+  --color-hero: #ffffff;
+  --color-hero-subtitle: rgba(157, 164, 189, 0.6);
+  --color-hero-text: #9da4bd;
+  --color-hero-social-default: #303030;
+  --color-hero-social-acent: #ff6c00;
+
+  /* color about */
+  --color-about-main: #303030;
+  --color-about-secondary: #555555;
+
+  /* color prices */
+  --color-prices: #9da4bd;
+}
+
+body {
+  font-family: var(--font-family-main);
+}
+
+/* ===== COMPONENTS ===== */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.hiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  outline: 1px dashed red;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+  }
+}
+
+.btn-online-booking {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: var(--color-about-main);
+
+  background-color: transparent;
+  border: 1px solid var(--color-header-acent);
+  border-radius: 25px;
+}
+
+.btn-online-booking:hover,
+.btn-online-booking:focus,
+.btn-online-booking:active {
+  color: var(--color-header-defoult);
+
+  background-color: var(--color-header-acent);
+  border: 1px solid var(--color-header-acent);
+}
+
+/* ///// COMPONENTS ///// */
+
+/* ===== HEADER ===== */
+/* ///// HEADER ///// */
+
+/* ===== HERO ===== */
+.hero {
+  padding-top: 208px;
+  padding-bottom: 208px;
+
+  background-image: url(../images/hero/hero-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.right-side {
+}
+
+.hero-sudtitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-hero-subtitle);
+}
+
+.hero-sudtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-hero-subtitle);
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-family: var(--font-family-secondary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: var(--color-header-defoult);
+}
+
+.hero-slogan {
+  max-width: 321px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--color-hero-text);
+}
+/* ///// HERO ///// */
+
+/* ===== ABOUT ===== */
+.about-subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: var(--color-about-main);
+}
+
+.about-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-about-main);
+}
+
+.about-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 306px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--color-about-main);
+}
+
+.about-slogan {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: var(--color-about-secondary);
+}
+
+.about-description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--color-about-secondary);
+}
+/* ===== приховання зображень на мобільних пристроях ===== */
+@media screen and (max-width: 767px) {
+  .about-photo-wrapper {
+    display: none;
+  }
+}
+/* ///// приховання зображень на мобільних пристроях ///// */
+
+/* ===== підключення стилів для планшетів ===== */
+@media screen and (min-width: 768px) {
+  .about {
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-photo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .about-photo {
+    display: block;
+    width: 330px;
+    height: 235px;
+  }
+
+  .about-slogan {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .about-description {
+    margin-bottom: auto;
+  }
+}
+/* ///// підключення стилів для планшетів ///// */
+
+/* ===== підключення стилів для десктопів ===== */
+@media screen and (min-width: 1200px) {
+  .about-photo {
+    width: 270px;
+    height: 445px;
+  }
+
+  .about-photo-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+
+  .about-title,
+  .about-slogan,
+  .about-description {
+    max-width: 470px;
+  }
+
+  .about-title {
+    font-size: 42px;
+  }
+}
+/* ///// підключення стилів для десктопів ///// */
+
+/* ///// ABOUT ///// */
+
+/* ===== PRICES ===== */
+
+/* ===== фонове зображення на мобільних пристроях ===== */
+.prices {
+  background-image: url(../images/prices/price-bg-mobile.png);
+  background-size: cover;
+  background-position: center;
+  background-color: #111319;
+}
+/* ///// фонове зображення на мобільних пристроях ///// */
+
+/* ===== фонове зображення на планшетах ===== */
+@media screen and (min-width: 768px) {
+  .prices {
+    background-image: url(../images/prices/price-bg-tablet.png);
+  }
+}
+/* ///// фонове зображення на планшетах ///// */
+
+.prices-subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--color-hero-subtitle);
+}
+
+.prices-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-hero-subtitle);
+}
+
+.prices-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--color-header-defoult);
+}
+
+.wrapper-prices {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 44px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.first {
+  margin-bottom: 20px;
+}
+
+.prices-item {
+  display: flex;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  color: var(--color-prices);
+}
+
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.service {
+  display: flex;
+  align-items: baseline;
+  flex-grow: 1;
+}
+
+.service::after {
+  content: '';
+  margin-right: 4px;
+  margin-left: 4px;
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--color-hero-subtitle);
+}
+
+.btn-light {
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--color-header-defoult);
+}
+
+/* ===== підключення стилів для планшетів ===== */
+@media screen and (min-width: 768px) {
+  .prices-title {
+    font-size: 42px;
+  }
+
+  .prices-item {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .wrapper-prices {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+/* ///// підключення стилів для планшетів ///// */
+
+/* ===== підключення стилів для десктопів ===== */
+@media screen and (min-width: 1200px) {
+  .wrapper-prices {
+    display: flex;
+    padding: 0;
+    background: transparent;
+  }
+
+  .prices-list {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  .first {
+    margin-bottom: 0;
+    margin-right: 30px;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  .second {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+/* ///// підключення стилів для десктопів ///// */
+
+/* ///// PRICES ///// */
+
+/* ===== STATISTIC ===== */
+.statistic-subtitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--color-about-main);
+}
+
+.statistic-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-about-main);
+}
+
+.statistic-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: var(--color-about-main);
+}
+
+.statistic-slogan {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.64;
+  letter-spacing: 0.02em;
+  color: var(--color-about-secondary);
+}
+
+.statistic-wrapper {
+  display: flex;
+  margin-top: 44px;
+}
+
+.statistic-wrapper > li:last-child {
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+.statistic-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  outline: 1px solid red;
+}
+
+.statistic-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-basis: calc(100% / 2 - 15px);
+  background: #f7f7f7;
+}
+
+.number {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+  color: var(--color-about-main);
+}
+
+.number::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+
+  color: #ff6c00;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--color-about-main);
+}
+
+/* ===== розміщення елементів для планшетів ===== */
+@media screen and (min-width: 768px) {
+  .statistic-title {
+    width: 450px;
+  }
+
+  .statistic-slogan {
+    width: 500px;
+  }
+
+  .statistic-wrapper {
+    justify-content: right;
+  }
+
+  .statistic-item {
+    padding-left: 44px;
+    padding-right: 44px;
+    width: 210px;
+  }
+}
+/* ///// розміщення елементів для планшетів ///// */
+
+/* ===== розміщення елементів для десктопів ===== */
+@media screen and (min-width: 1200px) {
+  .statistic {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+  }
+
+  .statistic-wrapper {
+    margin-top: 0;
+    margin-right: 130px;
+  }
+
+  .statistic-description-wrapper {
+    flex-grow: 1;
+  }
+}
+/* ///// розміщення елементів для десктопів ///// */
+
+/* ///// STATISTIC ///// */
+
+/* ===== BARBERS ===== */
+.barber {
+  background-color: #f7f7f7;
+}
+.barbers-subtitle {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--color-about-main);
+}
+
+.barbers-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-about-main);
+}
+
+.barbers-title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+
+  font-family: var(--font-family-secondary);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--color-about-main);
+}
+
+.barber-list {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.barber-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.barber-photo {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+.barber-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: var(--color-about-main);
+}
+.barber-position {
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: var(--color-header-acent);
+}
+
+.barber-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-header-defoult);
+}
+
+.social-link {
+  fill: var(--color-about-main);
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  fill: var(--color-header-acent);
+}
+
+/* ===== розташування карток барберів на планшеті ===== */
+@media screen and (min-width: 768px) {
+  .barber {
+    padding: 0;
+    width: 450px;
+  }
+
+  .barber-list {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+}
+/* ///// розташування карток барберів на планшеті ///// */
+
+/* ===== розташування карток барберів на десктопі ===== */
+@media screen and (min-width: 1200px) {
+  .barber {
+    width: 1200px;
+  }
+
+  .barber-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+/* ///// розташування карток барберів на десктопі ///// */
+
+/* ///// BARBERS ///// */
+
+/* ===== PORTFOLIO ===== */
+.portfolio-subtitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--color-about-main);
+}
+
+.portfolio-subtitle::before {
+  content: '';
+  margin-right: 20px;
+  width: 60px;
+  height: 1px;
+  background-color: var(--color-about-main);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 71px;
+}
+
+.portfolio-photo {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===== розташування карток портфоліо на 
+планшеті та десктопі ===== */
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    margin-top: 44px;
+  }
+}
+/* ///// розташування карток портфоліо на 
+планшеті та десктопі ///// */
+
+/* ///// PORTFOLIO ///// */

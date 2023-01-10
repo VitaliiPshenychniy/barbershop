@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <!-- ===== завантаження шрифтів ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ===== підключення нормолайзера ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
+    <!-- ===== підключення стилів ===== -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header></header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+          <!-- ===== ліва частина ===== -->
+          <!-- <div class="left-side"></div> -->
+          <!-- ///// ліва частина ///// -->
+
+          <!-- ===== права частина ===== -->
+          <div class="right-side">
+            <p class="hero-sudtitle">A hair salon for men in Kyiv</p>
+            <h1 class="title">BarberShop</h1>
+            <p class="hero-slogan">
+              We are experts in trendy men&#39;s haircuts. We work quickly, carefully and with style.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ///// права частина ///// -->
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="about container">
+          <div class="about-photo-wrapper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/about/about-beard-desktop.jpg" />
+              <img class="about-photo" src="./images/about/about-beard-tablet.jpg" alt="beard" />
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./images/about/about-hair-desktop.jpg" />
+              <img class="about-photo" src="./images/about/about-hair-tablet.jpg" alt="heir" />
+            </picture>
+          </div>
+          <div class="about-description-wrapper">
+            <p class="about-subtitle">About</p>
+            <h2 class="about-title">Best Barbershop in your city</h2>
+            <p class="about-slogan">If you want to add more confidence to your image, you should visit us</p>
+            <p class="about-description">
+              We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall
+              into the hands of our master, you will never be the same again. We are a team that is always "on the same
+              wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
+            </p>
+            <button class="btn-online-booking" type="button">online-booking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICES -->
+      <section class="prices section" id="prices">
+        <div class="container">
+          <p class="prices-subtitle">Spend your time with the best masters</p>
+          <h2 class="prices-title">Services and prices</h2>
+          <div class="wrapper-prices">
+            <ul class="prices-list first list">
+              <li class="prices-item">
+                <p class="service">Men&#39;s haircut</p>
+                <p class="price">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Beard trim</p>
+                <p class="price">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Mustache trim</p>
+                <p class="price">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Straight razor shave</p>
+                <p class="price">from 200 uah.</p>
+              </li>
+            </ul>
+
+            <ul class="prices-list second list">
+              <li class="prices-item">
+                <p class="service">Trainee&#39;s haircut</p>
+                <p class="price">from 50 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Haircut under the nozzle</p>
+                <p class="price">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Children&#39;s haircut (0-12 y.o.)</p>
+                <p class="price">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="service">Camouflage of grey hair</p>
+                <p class="price">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-online-booking btn-light" type="button">online-booking</button>
+        </div>
+      </section>
+
+      <!-- STATISTIC -->
+      <section class="section">
+        <div class="statistic container">
+          <div class="statistic-description-wrapper">
+            <p class="statistic-subtitle">Old traditional school</p>
+            <h2 class="statistic-title">¿Why people come to us?</h2>
+            <p class="statistic-slogan">
+              Only good things are said about us. But it's better to see and feel 1 time than read 10 times.
+            </p>
+          </div>
+          <ul class="statistic-wrapper list">
+            <li>
+              <ul class="statistic-list list">
+                <li class="statistic-item">
+                  <p class="number">600</p>
+                  <p class="text">Satisfied customers per day</p>
+                </li>
+
+                <li class="statistic-item">
+                  <p class="number">20</p>
+                  <p class="text">Kyiv&#39;s best barbers</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="statistic-list list">
+                <li class="statistic-item">
+                  <p class="number">50</p>
+                  <p class="text">Awards for excellent service</p>
+                </li>
+
+                <li class="statistic-item">
+                  <p class="number">100</p>
+                  <p class="text">Gifts for regular customers</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- BARBERS -->
+      <section class="section" id="barbers">
+        <div class="barber container">
+          <p class="barbers-subtitle">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers-title">Our barbers</h2>
+          <ul class="barber-list list">
+            <li class="barber-item">
+              <!-- ===== завантаження зображення барбера 1 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/barbers/desktop/john-smith-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/barbers/tablet/john-smith-tablet.jpg 1x" />
+                <img src="./images/barbers/mobile/john-smith-mobile.jpg" alt="John Smith" class="barber-photo" />
+              </picture>
+              <!-- ///// завантаження зображення барбера 1 під різні гаджети ///// -->
+
+              <h3 class="barber-name">John Smith</h3>
+              <p class="barber-position">Extreme Barber</p>
+
+              <!-- ===== посилання на соціальні мережі ===== -->
+              <ul class="barber-social-list list">
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+              <!-- ///// посилання на соціальні мережі ///// -->
+            </li>
+
+            <li class="barber-item">
+              <!-- ===== завантаження зображення барбера 2 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/barbers/desktop/michele-doe-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/barbers/tablet/michele-doe-tablet.jpg 1x" />
+                <img src="./images/barbers/mobile/michele-doe-mobile.jpg" alt="Michele Doe" class="barber-photo" />
+              </picture>
+              <!-- ///// завантаження зображення барбера 2 під різні гаджети ///// -->
+
+              <h3 class="barber-name">Michele Doe</h3>
+              <p class="barber-position">Extreme Barber</p>
+
+              <!-- ===== посилання на соціальні мережі ===== -->
+              <ul class="barber-social-list list">
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+              <!-- ///// посилання на соціальні мережі ///// -->
+            </li>
+
+            <li class="barber-item">
+              <!-- ===== завантаження зображення барбера 3 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/barbers/desktop/alan-black-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/barbers/tablet/alan-black-tablet.jpg 1x" />
+                <img src="./images/barbers/mobile/alan-black-mobile.jpg" alt="Alan Black" class="barber-photo" />
+              </picture>
+              <!-- ///// завантаження зображення барбера 3 під різні гаджети ///// -->
+
+              <h3 class="barber-name">Alan Black</h3>
+              <p class="barber-position">Extreme Barber</p>
+
+              <!-- ===== посилання на соціальні мережі ===== -->
+              <ul class="barber-social-list list">
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-item">
+                  <a class="social-link link" href="#"
+                    ><svg class="social-icon" width="20" height="20">
+                      <use href="./images/icons.svg#linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
+              <!-- ///// посилання на соціальні мережі ///// -->
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== PORTFOLIO ===== -->
+      <section class="section">
+        <div class="container">
+          <p class="portfolio-subtitle">In Latin, "barba" means "beard"</p>
+          <ul class="portfolio-list list">
+            <li>
+              <!-- ===== завантаження зображення 1 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/gallery/desktop/gallery-1-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/gallery/tablet/gallery-1-tablet.jpg 1x" />
+                <img class="portfolio-photo" src="./images/gallery/mobile/gallery-1-mobile.jpg" alt="photo 1" />
+              </picture>
+              <!-- ///// завантаження зображення 1 під різні гаджети ///// -->
+            </li>
+            <li>
+              <!-- ===== завантаження зображення 2 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/gallery/desktop/gallery-2-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/gallery/tablet/gallery-2-tablet.jpg 1x" />
+                <img class="portfolio-photo" src="./images/gallery/mobile/gallery-2-mobile.jpg" alt="photo 2" />
+              </picture>
+              <!-- ///// завантаження зображення 2 під різні гаджети ///// -->
+            </li>
+            <li>
+              <!-- ===== завантаження зображення 3 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/gallery/desktop/gallery-3-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/gallery/tablet/gallery-3-tablet.jpg 1x" />
+                <img class="portfolio-photo" src="./images/gallery/mobile/gallery-3-mobile.jpg" alt="photo 3" />
+              </picture>
+              <!-- ///// завантаження зображення 3 під різні гаджети ///// -->
+            </li>
+            <li>
+              <!-- ===== завантаження зображення 4 під різні гаджети ===== -->
+              <picture>
+                <source media="(min-width:1200px)" srcset="./images/gallery/desktop/gallery-4-desktop.jpg 1x" />
+                <source media="(min-width:768px)" srcset="./images/gallery/tablet/gallery-4-tablet.jpg 1x" />
+                <img class="portfolio-photo" src="./images/gallery/mobile/gallery-4-mobile.jpg" alt="photo 4" />
+              </picture>
+              <!-- ///// завантаження зображення 4 під різні гаджети ///// -->
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
