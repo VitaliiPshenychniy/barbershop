@@ -808,6 +808,10 @@ ul {
   margin-left: 30px;
 }
 
+.statistic-wrapper li {
+  width: 100%;
+}
+
 .statistic-list {
   display: flex;
   flex-direction: column;
@@ -820,11 +824,9 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 35px;
-  padding-right: 35px;
   padding-top: 20px;
   padding-bottom: 20px;
-  flex-basis: calc(100% / 2 - 15px);
+
   background: #f7f7f7;
 }
 
@@ -853,6 +855,7 @@ ul {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
+  width: 122px;
   color: var(--color-about-main);
 }
 
@@ -873,6 +876,9 @@ ul {
   .statistic-item {
     padding-left: 44px;
     padding-right: 44px;
+  }
+
+  .statistic-wrapper li {
     width: 210px;
   }
 }
@@ -889,6 +895,11 @@ ul {
   .statistic-wrapper {
     margin-top: 0;
     margin-right: 130px;
+    margin-left: 100px;
+  }
+
+  .statistic-wrapper li {
+    width: 170px;
   }
 
   .statistic-description-wrapper {
