@@ -404,6 +404,7 @@ ul {
   padding-top: 208px;
   padding-bottom: 208px;
   padding-left: 31px;
+  padding-right: 31px;
   flex-grow: 1;
 
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero/hero-mobile.jpg);
@@ -816,8 +817,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 30px;
-
-  outline: 1px solid red;
 }
 
 .statistic-item {
