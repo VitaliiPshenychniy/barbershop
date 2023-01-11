@@ -20,18 +20,54 @@
 
   <body>
     <!-- HEADER -->
-    <header></header>
+    <header class="header container">
+      <!-- ===== ліва частина =====-->
+      <div class="header-left-side">
+        <a class="logo-link" href="./index.html">
+          <svg class="logo" width="69" height="56">
+            <use href="./images/icons.svg#logo"></use></svg
+        ></a>
+      </div>
+      <!-- ///// ліва частина ///// -->
+
+      <!-- ===== права частина =====-->
+      <div class="header-right-side">
+        <svg class="menu-burger" width="40" height="40">
+          <use href="./images/icons.svg#menu-mobile"></use>
+        </svg>
+
+        <nav class="nav">
+          <ul class="nav-list list">
+            <li class="nav-item"><a class="nav-link link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#prices">Services and prices</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#barbers">Barbers</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-contact">
+          <button class="btn-online-booking btn-light" type="button">online-booking</button>
+          <a class="tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+        </div>
+      </div>
+      <!-- ///// права частина ///// -->
+    </header>
 
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="container">
+        <div class="hero-wrapper container">
           <!-- ===== ліва частина ===== -->
-          <!-- <div class="left-side"></div> -->
+          <div class="hero-left-side">
+            <ul class="hero-social-list list">
+              <li class="hero-social-item"><a class="hero-social-link link" href="#">Instagram</a></li>
+              <li class="hero-social-item"><a class="hero-social-link link" href="#">Youtube</a></li>
+            </ul>
+          </div>
           <!-- ///// ліва частина ///// -->
 
           <!-- ===== права частина ===== -->
-          <div class="right-side">
+          <div class="hero-right-side">
             <p class="hero-sudtitle">A hair salon for men in Kyiv</p>
             <h1 class="title">BarberShop</h1>
             <p class="hero-slogan">
